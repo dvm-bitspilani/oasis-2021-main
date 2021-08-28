@@ -1,0 +1,140 @@
+@font-face {
+      font-family: "BlackChancery";
+      src: url("../fonts/blackchancery/BLKCHCRY.TTF");
+}
+
+body {
+      overflow: hidden;
+      margin: 0;
+}
+.main-section-landing {
+      background: linear-gradient(180deg, #000000 0%, #1f1e4d 100%);
+}
+
+.main-div {
+      background: url(../assets/pc/Room-02.png) no-repeat;
+      background-size: 100% 100%;
+      height: 100vh;
+}
+
+.left-paintings {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+}
+
+.right-paintings {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+}
+
+.painting-link {
+      display: flex;
+      flex-direction: column;
+}
+.main-wrapper-links {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      top: 40%;
+}
+
+.paintDiv {
+      display: flex;
+}
+.paintDiv a {
+      width: 55%;
+}
+
+.reg-button {
+      position: absolute;
+      top: 79%;
+      left: 60%;
+}
+
+.oasisIcon {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      top: 10%;
+}
+.oasisIcon img {
+      width: 35%;
+}
+
+.painting-link img:nth-child(3) {
+      display: none;
+}
+
+.painting-link img:nth-child(4) {
+      display: none;
+}
+
+.paintDiv {
+      justify-content: center;
+}
+.sponsorD {
+      justify-content: flex-start;
+}
+
+
+@media (max-width: 768px) {
+      .main-div {
+            background: url(../assets/mobile/mobileWall.png) no-repeat;
+            background-size: 100% 100%;
+            height: 100vh;
+      }
+      /* .main-wrapper-links {
+            display: none;
+      } */
+
+      .reg-button {
+            display: none;
+      }
+.oasisIcon{
+    top: 20%;
+}
+      .oasisIcon img {
+            width: 60%;
+      }
+
+      .painting-link img:nth-child(1) {
+            display: none;
+      }
+
+      .painting-link img:nth-child(2) {
+            display: none;
+      }
+
+      .painting-link img:nth-child(3) {
+            display: initial;
+      }
+
+      .painting-link img:nth-child(4) {
+            display: initial;
+      }
+
+      .left-paintings {
+            flex-direction: column;
+            justify-content: space-between;
+      }
+      .right-paintings {
+            flex-direction: column;
+            justify-content: space-between;
+      }
+      .main-wrapper-links {
+            top: 55%;
+      }
+
+      .paintDiv a {
+            width: 64%;
+      }
+
+      .paintDiv {
+            justify-content: center !important;
+      }
+}
