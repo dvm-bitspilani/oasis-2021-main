@@ -195,3 +195,58 @@ background-color: black;
 color: white;
 width: 88%;
 } */
+
+
+@media only screen and (max-width:968px) {
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    .registration-container>h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .input-column:nth-child(2) {
+        width: 95%;
+    }
+
+    .register-wrapper {
+        justify-content: center;
+    }
+
+    #register {
+        width: 70%;
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    .register-wrapper::before {
+
+        height: 40px;
+        width: 70%;
+        right: 35px;
+        bottom: -5px;
+        background-color: #0A322F;
+        border-radius: 3px;
+    }
+
+    .input-explanation {
+        font-size: 0.75rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .registration-container {
+        width: 85vw;
+        padding-bottom: 8%;
+    }
+
+    .input-cell {
+        margin: 2.5% 0;
+    }
+}
