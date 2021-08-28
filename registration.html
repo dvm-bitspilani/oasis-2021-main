@@ -22,7 +22,7 @@
                     <p class="input-explanation">Type in your first and last name here</p>
                 </div>
                 <div>
-                    <label for="">College </label>
+                    <label for="" class="not-required">College </label>
                     <input type="text" required>
                     <p class="input-explanation">Select your College Name</p>
                 </div>
@@ -31,23 +31,23 @@
             <div class="input-row">
 
                 <div class="input-column">
-                    <div style="margin-bottom: 10%;">
+                    <div style="margin-bottom: 5%;">
                         <label for="">Email</label>
                         <input type="email" required>
                         <p class="input-explanation">Type in your Email</p>
                     </div>
-                    <div style="margin-bottom: 10%;">
+                    <div style="margin-bottom: 5%;">
                         <label for="">Phone </label>
                         <input type="tel" pattern="[0-9]{5}-[0-9]{5}" required>
                         <p class="input-explanation phone-explanation">Type your phone number here</p>
                     </div>
-                    <div style="margin-bottom: 10%;">
+                    <div style="margin-bottom: 5%;">
                         <label for="">City </label>
                         <input type="text" required>
                         <p class="input-explanation">Type in your City Name</p>
                     </div>
                     <div>
-                        <label for="">Year Of Study </label>
+                        <label for="" class="not-required">Year Of Study </label>
                         <select name="year" id="yearofstudy" required>
                             <option value="1st">1st</option>
                             <option value="2nd">2nd</option>
@@ -57,24 +57,66 @@
                     </div>
                 </div>
                 <div class="input-column">
-                    <p>Gender</p>
-                    <div class="radio-wrapper">
 
-                          <input type="radio" id="male" name="gender" value="male">
-                          <label class="radio-label" for="html">Male</label>
-                          <input type="radio" id="css" name="gender" value="female">
-                          <label class="radio-label" for="css">Female</label>
-                        <!--   <input type="radio" id="javascript" name="other" value="other">
-                          <label class="radio-label" for="css">Non-binary</label> -->
+                    <div class="radio-cell">
+                        <p class="radio-heading">Gender</p>
+                        <p class="input-explanation radio-explanation">Select your gender</p>
+                        <div class="radio-wrapper">
+
+                            <div class="radio-option">
+                                  <input type="radio" id="male" name="gender" value="male">
+                                  <label class="radio-label not-required" for="male">Male</label>
+                            </div>
+                            <div class="radio-option">
+                                  <input type="radio" id="female" name="gender" value="female">
+                                  <label class="radio-label not-required" for="female">Female</label>
+                            </div>
+                            <div class="radio-option" style="width: -webkit-fill-available;">
+                                  <input type="radio" id="other" name="gender" value="other">
+                                  <label class="radio-label not-required" for="other">Rather Not Say</label>
+                            </div>
+                        </div>
                     </div>
+                    <div class="radio-cell">
+                        <p class="radio-heading">Head Of Society</p>
+                        <p class="input-explanation radio-explanation">Are You Head Of Society ?</p>
+                        <div class="radio-wrapper">
+
+                            <div class="radio-option">
+                                  <input type="radio" id="male" name="head" value="true">
+                                  <label class="radio-label not-required" for="male">Yes</label>
+                            </div>
+                            <div class="radio-option">
+                                  <input type="radio" id="female" name="head" value="false">
+                                  <label class="radio-label not-required" for="female">No</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="radio-cell">
+                        <p class="radio-heading">Mentor / Choreographer </p>
+                        <p class="input-explanation radio-explanation">Are You Mentor / Choreographer ?</p>
+                        <div class="radio-wrapper">
+
+                            <div class="radio-option">
+                                  <input type="radio" id="male" name="head" value="true">
+                                  <label class="radio-label not-required" for="male">Yes</label>
+                            </div>
+                            <div class="radio-option">
+                                  <input type="radio" id="female" name="head" value="false">
+                                  <label class="radio-label not-required" for="female">No</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
                 </div>
 
+            </div>
 
-
-                <div>
-
-                </div>
-
+            <div class="register-wrapper">
+                <input type="submit" name="Register" value="Register" id="register">
             </div>
         </form>
     </div>

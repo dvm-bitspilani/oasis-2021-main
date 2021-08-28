@@ -21,6 +21,7 @@ body {
     height: 95vh;
     background-color: white;
     padding: 2.5% 5%;
+    overflow: scroll;
 }
 
 .registration-container>h1 {
@@ -58,8 +59,7 @@ select {
     background: none;
     width: 90%;
     padding: 2%;
-    padding-left: 0;
-    font-size: 1.15rem;
+    font-size: 1.45rem;
     margin-left: 0;
     border-color: #C4C4C4;
     color: #4D4C4C;
@@ -67,7 +67,7 @@ select {
 
 input:focus,
 select:focus {
-    outline: none;
+    outline: 0.5px solid black;
 }
 
 select {
@@ -75,13 +75,35 @@ select {
 }
 
 .input-explanation {
-    margin: 1% 1% 0;
+    margin: 0;
+    padding: 2%;
     font-family: 'Gilroy-Regular', sans-serif;
     font-size: 0.8rem;
+    width: 88.75%;
+    position: relative;
+    right: 1px;
 }
 
 
 /* //////////Radio Buttons ////////// */
+
+.radio-cell {
+    margin: 10% 0;
+}
+
+.radio-cell:nth-child(1) {
+    margin-top: 0;
+}
+
+.input-column:nth-child(2) {
+    width: 48%;
+}
+
+.radio-heading {
+    font-family: 'Gilroy-Medium';
+    font-size: 1rem;
+    margin-bottom: 0;
+}
 
 .radio-wrapper {
     display: flex;
@@ -90,6 +112,12 @@ select {
 
 .radio-option {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-option:nth-child(2) {
+    margin: 0 10%;
 }
 
 input[type="radio"] {
@@ -98,9 +126,22 @@ input[type="radio"] {
     border: black;
 }
 
+input[type="radio"]:focus {
+    outline: none;
+}
+
+.radio-explanation {
+    padding: 1%;
+    margin: 1% 0 4% 0;
+}
+
 .radio-label {
     font-size: 0.8rem;
-    width: -webkit-fill-available;
+}
+
+
+.not-required::after {
+    content: '';
 }
 
 
@@ -109,3 +150,48 @@ input[type="radio"] {
     height: 4vw;
     background: linear-gradient(90deg, #FBC926 -0.18%, #FFFBCC 22.22%, #F8F0BB 26.89%, #E7D28E 37.16%, #CCA246 50.22%, #C3922E 54.89%, #EED688 80.09%, #FFFBCC 92.22%);
 }
+
+
+/* ///////////Register Button /////// */
+
+.register-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+#register {
+    width: 35%;
+    margin-right: 0;
+    margin-left: auto;
+    font-family: 'BlackChancery';
+    letter-spacing: 2px;
+    font-size: 2rem;
+    background-color: #F1EBDE;
+    border-radius: 3px;
+    border: none;
+    position: relative;
+    border: 1.16px solid #125953;
+    cursor: pointer;
+}
+
+.register-wrapper::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    height: 70px;
+    width: 35%;
+    right: -5px;
+    bottom: -5px;
+    background-color: #0A322F;
+    border-radius: 3px;
+}
+
+
+/* For paragraph in focus
+{
+background-color: black;
+color: white;
+width: 88%;
+} */
