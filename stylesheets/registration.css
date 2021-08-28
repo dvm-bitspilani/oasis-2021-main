@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "BlackChancery";
+    src: url("../fonts/blackchancery/BLKCHCRY.TTF");
+}
+
+body {
+    background-image: url(../assets/Registration.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registration-container {
+    width: 45vw;
+    height: 95vh;
+    background-color: white;
+    padding: 2.5% 5%;
+}
+
+.registration-container>h1 {
+    font-family: 'BlackChancery';
+    font-weight: 500;
+    font-size: 4rem;
+    margin: 0;
+    text-decoration: underline;
+}
+
+
+.input-row {
+    display: flex;
+    margin-top: 4%;
+    justify-content: space-between;
+}
+
+label {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 1rem;
+}
+
+label::after {
+    content: '*';
+    color: #FF0000;
+    font-size: 1.25rem;
+    margin: 0 2.5% 5%
+}
+
+input,
+select {
+    border: none;
+    margin: 0 3%;
+    border-bottom: 1px solid rgb(89, 89, 89);
+    background: none;
+    width: 90%;
+    padding: 2%;
+    padding-left: 0;
+    font-size: 1.15rem;
+    margin-left: 0;
+    border-color: #C4C4C4;
+    color: #4D4C4C;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+select {
+    font-size: 0.75rem;
+}
+
+.input-explanation {
+    margin: 1% 1% 0;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 0.8rem;
+}
+
+
+/* //////////Radio Buttons ////////// */
+
+.radio-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.radio-option {
+    display: flex;
+}
+
+input[type="radio"] {
+    width: 20px !important;
+    height: 20px !important;
+    border: black;
+}
+
+.radio-label {
+    font-size: 0.8rem;
+    width: -webkit-fill-available;
+}
+
+
+.registration-stand {
+    width: 5vw;
+    height: 4vw;
+    background: linear-gradient(90deg, #FBC926 -0.18%, #FFFBCC 22.22%, #F8F0BB 26.89%, #E7D28E 37.16%, #CCA246 50.22%, #C3922E 54.89%, #EED688 80.09%, #FFFBCC 92.22%);
+}

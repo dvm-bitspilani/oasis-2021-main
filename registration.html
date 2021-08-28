@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrations</title>
+    <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheets/registration.css">
+
+</head>
+
+<body>
+    <div class="registration-container">
+        <h1>Registration</h1>
+
+        <form action="" method="POST">
+            <div class="input-row">
+                <div>
+                    <label for="">Name</label>
+                    <input type="text" required>
+                    <p class="input-explanation">Type in your first and last name here</p>
+                </div>
+                <div>
+                    <label for="">College </label>
+                    <input type="text" required>
+                    <p class="input-explanation">Select your College Name</p>
+                </div>
+            </div>
+
+            <div class="input-row">
+
+                <div class="input-column">
+                    <div style="margin-bottom: 10%;">
+                        <label for="">Email</label>
+                        <input type="email" required>
+                        <p class="input-explanation">Type in your Email</p>
+                    </div>
+                    <div style="margin-bottom: 10%;">
+                        <label for="">Phone </label>
+                        <input type="tel" pattern="[0-9]{5}-[0-9]{5}" required>
+                        <p class="input-explanation phone-explanation">Type your phone number here</p>
+                    </div>
+                    <div style="margin-bottom: 10%;">
+                        <label for="">City </label>
+                        <input type="text" required>
+                        <p class="input-explanation">Type in your City Name</p>
+                    </div>
+                    <div>
+                        <label for="">Year Of Study </label>
+                        <select name="year" id="yearofstudy" required>
+                            <option value="1st">1st</option>
+                            <option value="2nd">2nd</option>
+                            <option value="3rd">3rd</option>
+                            <option value="4th">4th</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-column">
+                    <p>Gender</p>
+                    <div class="radio-wrapper">
+
+                          <input type="radio" id="male" name="gender" value="male">
+                          <label class="radio-label" for="html">Male</label>
+                          <input type="radio" id="css" name="gender" value="female">
+                          <label class="radio-label" for="css">Female</label>
+                        <!--   <input type="radio" id="javascript" name="other" value="other">
+                          <label class="radio-label" for="css">Non-binary</label> -->
+                    </div>
+                </div>
+
+
+
+                <div>
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div class="registration-stand">
+
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
