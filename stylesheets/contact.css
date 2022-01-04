@@ -34,15 +34,12 @@ body {
 
 .contact-container {
   width: 80%;
-  border-radius: 10px;
   position: relative;
   text-align: center;
   padding: 2rem;
   font-family: "Montserrat", sans-serif;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .contact-card-container {
@@ -94,14 +91,18 @@ body {
 }
 
 .heading {
-  margin: 0;
+  margin: 3rem 0 1rem;
   font-family: "BlackChancery";
   font-size: 4rem;
-  margin-bottom: 1rem;
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-thickness: 2px;
   font-weight: 500;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 @media screen and (max-width: 768px) {
