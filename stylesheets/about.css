@@ -18,6 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .about-container {
@@ -41,11 +42,54 @@ body {
   font-weight: 500;
 }
 
+.pots {
+  width: 18%;
+  position: absolute;
+  bottom: 0;
+  left: -30px;
+}
+
+.lamp {
+  width: 11%;
+  position: absolute;
+  top: 20%;
+  right: 2%;
+}
+
+.pot-right {
+  width: 7%;
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+}
+
+.pots img,
+.lamp img,
+.pot-right img {
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   .about-container {
     width: 90%;
     height: 90vh;
     overflow: scroll;
     border-radius: 5px;
+  }
+
+  .pots,
+  .lamp,
+  .pot-right {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .heading{
+    font-size: 4.5rem;
+  }
+  
+  .about-container p{
+    font-size: 2rem;
   }
 }
