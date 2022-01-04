@@ -21,12 +21,15 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      width: 30%;
 }
 
 .right-paintings {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      width: 30%;
+
 }
 
 .painting-link {
@@ -44,7 +47,7 @@ body {
       display: flex;
 }
 .paintDiv a {
-      width: 55%;
+      width: 11vw;
 }
 
 .reg-button {
