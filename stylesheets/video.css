@@ -8,6 +8,7 @@ body{
     height: 100%;
     z-index: -2;
 }
+
 .scroller{
     height: 100vh;
   /* padding: 8% 4%; */
@@ -65,8 +66,10 @@ align-items: center;
     text-align: center;
 }
 .lamp{
-    width: 27%;
+    position: absolute;
+    width: 100px;
     margin-bottom: 30px;
+    top: 40px;
 }
 .lady{
     display: flex;
@@ -74,7 +77,57 @@ align-items: center;
     align-items: center;
     margin-top: -150px;
 }
+
 .lady img{
 width: 450px;
 height: 400px;
 }
+
+.statue{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.statue-img{
+    width: 200px;
+    margin-bottom: -260px;
+}
+.podium{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.podium img{
+    width: 250px;
+}
+.video-banner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+.video-banner img{
+    object-fit: contain;
+width: 300px;
+height: 350px;
+}
+
+.plant-pot{
+    bottom: 0;
+    z-index: 20;
+    position: absolute;
+    left: 1400px;
+}
+.plant-pot img{
+    width: 250px;
+}
+.pot-2{
+    left: 2400px;
+}
+.pot-2 img{
+    width: 190px;
+}
+
+
