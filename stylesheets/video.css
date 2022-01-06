@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    overflow-y: hidden;
+}
+
+.long-wall{
+    position: absolute;
+    height: 100vh;
+    z-index: -2;
+    width: 4500px;
+}
+.mobile-wall{
+    display: none;
+}
+
+.scroller{
+    height: 100vh;
+  /* padding: 8% 4%; */
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  /* overflow-x: auto; */
+/* background-image: url("/assets/pc/Frame\ 4.png");
+background-size: 400% 400%; */
+}
+
+.component-1{
+display: flex;
+flex-direction: column;
+/* justify-content: ; */
+align-items: center;
+
+}
+
+.component-1 .iframe-video{
+    margin-bottom: 75px;
+}
+
+.vertical-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+
+.component-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    }
+
+
+
+.iframe-video{
+    background-image: url("/assets/pc/Oasis-20\ theme\ reveal.png");
+    margin: 50px 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 30px;
+    width: 415px;
+    height: 210px;
+}
+.video-plate img{
+    width: 60%;
+}
+.video-plate{
+    text-align: center;
+}
+.lamp{
+    position: absolute;
+    width: 100px;
+    margin-bottom: 30px;
+    top: 40px;
+}
+.lady{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+}
+
+.lady img{
+width: 450px;
+height: 400px;
+}
+
+.statue{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.statue-img{
+    width: 200px;
+    margin-bottom: -260px;
+}
+.podium{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.podium img{
+    width: 250px;
+}
+.video-banner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+.video-banner img{
+    object-fit: contain;
+width: 300px;
+height: 350px;
+}
+
+.plant-pot{
+    bottom: 0;
+    z-index: 20;
+    position: absolute;
+    left: 1400px;
+}
+.plant-pot img{
+    width: 250px;
+}
+.pot-2{
+    left: 2400px;
+}
+.pot-2 img{
+    width: 190px;
+}
+.pot-1-mobile , .pot-2-mobile , .comp-3-plate-mobile{
+    display: none;
+}
+
+
+@media(max-width: 768px){
+body{
+    overflow-x:hidden ;
+    overflow-y: auto;
+}
+    .long-wall{
+        display: none;
+    }
+    .mobile-wall{
+        display: initial;
+        position: absolute;
+        width: 100vw;
+        z-index: -2;
+        height: 1480px;
+    }
+
+
+    .video-banner{
+        display: none;
+    }
+    iframe{
+        width:195px;
+        height:140px;
+    }
+    .iframe-video{
+        width: 200px;
+    height: 150px;
+    margin: 40px 0 
+  }
+    .vertical-row{
+        margin: 0 20px;
+        align-items: flex-start;
+    }
+   .iframe-video{
+        margin-bottom: 10px !important;
+    }
+.lamp{
+    display: none;
+}
+.scroller{
+    flex-direction: column;
+}
+.lady{
+    display: none;
+}
+.podium{
+    display: none;
+}
+.statue{
+    display: none;
+}
+.video-plate img{
+    width: 40%;
+}
+.video-plate{
+    width: 160px;
+}
+.component-2{
+    flex-direction: column-reverse;
+    align-items: flex-end;
+
+}
+.component-2 .video-plate{
+ width: 260px;
+}
+.comp-3{
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5px;
+}
+.plant-pot{
+    display: none;
+}
+.component-1 .video-plate{
+    width: 260px;
+}
+.comp-3 .video-plate img{
+    width: 85%;
+    margin-top:-130px
+}
+.statue-img-mob{
+   left: 5%;
+    position: absolute;
+    display: initial;
+    width: 25%;
+    top: 62%;
+    z-index: -1;
+}
+.comp-3-plate-pc{
+display: none;
+}
+.comp-3-plate-mobile{
+display: initial;
+}
+.pot-1-mobile{
+    display: initial;
+    position: absolute;
+    width: 22%;
+    top: 40px;
+    right: 20px;
+}
+
+.pot-2-mobile{
+    display: initial;
+    position: absolute;
+    width: 22%;
+    top: 1200px;
+    left: 10px;
+}
+}
