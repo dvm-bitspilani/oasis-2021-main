@@ -5,9 +5,12 @@ body{
 
 .long-wall{
     position: absolute;
-    height: 100%;
+    height: 100vh;
     z-index: -2;
-    width: 320%;
+    width: 4500px;
+}
+.mobile-wall{
+    display: none;
 }
 
 .scroller{
@@ -17,7 +20,8 @@ body{
   flex-direction: row;
   /* align-items: center; */
   /* overflow-x: auto; */
-
+/* background-image: url("/assets/pc/Frame\ 4.png");
+background-size: 400% 400%; */
 }
 
 .component-1{
@@ -46,14 +50,13 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
 
-    
     }
 
 
 
 .iframe-video{
     background-image: url("/assets/pc/Oasis-20\ theme\ reveal.png");
-    margin: 70px 0;
+    margin: 50px 0;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding: 30px;
@@ -130,8 +133,118 @@ height: 350px;
 .pot-2 img{
     width: 190px;
 }
+.pot-1-mobile , .pot-2-mobile , .comp-3-plate-mobile{
+    display: none;
+}
 
 
 @media(max-width: 768px){
+body{
+    overflow-x:hidden ;
+    overflow-y: auto;
+}
+    .long-wall{
+        display: none;
+    }
+    .mobile-wall{
+        display: initial;
+        position: absolute;
+        width: 100vw;
+        z-index: -2;
+        height: 1480px;
+    }
 
+
+    .video-banner{
+        display: none;
+    }
+    iframe{
+        width:195px;
+        height:140px;
+    }
+    .iframe-video{
+        width: 200px;
+    height: 150px;
+    margin: 40px 0 
+  }
+    .vertical-row{
+        margin: 0 20px;
+        align-items: flex-start;
+    }
+   .iframe-video{
+        margin-bottom: 10px !important;
+    }
+.lamp{
+    display: none;
+}
+.scroller{
+    flex-direction: column;
+}
+.lady{
+    display: none;
+}
+.podium{
+    display: none;
+}
+.statue{
+    display: none;
+}
+.video-plate img{
+    width: 40%;
+}
+.video-plate{
+    width: 160px;
+}
+.component-2{
+    flex-direction: column-reverse;
+    align-items: flex-end;
+
+}
+.component-2 .video-plate{
+ width: 260px;
+}
+.comp-3{
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5px;
+}
+.plant-pot{
+    display: none;
+}
+.component-1 .video-plate{
+    width: 260px;
+}
+.comp-3 .video-plate img{
+    width: 85%;
+    margin-top:-130px
+}
+.statue-img-mob{
+   left: 5%;
+    position: absolute;
+    display: initial;
+    width: 25%;
+    top: 62%;
+    z-index: -1;
+}
+.comp-3-plate-pc{
+display: none;
+}
+.comp-3-plate-mobile{
+display: initial;
+}
+.pot-1-mobile{
+    display: initial;
+    position: absolute;
+    width: 22%;
+    top: 40px;
+    right: 20px;
+}
+
+.pot-2-mobile{
+    display: initial;
+    position: absolute;
+    width: 22%;
+    top: 1200px;
+    left: 10px;
+}
 }
