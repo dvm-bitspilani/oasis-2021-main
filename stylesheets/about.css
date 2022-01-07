@@ -21,7 +21,7 @@ body {
   overflow: hidden;
 }
 
-.about-container {
+.about-container, .sponsors-container {
   width: 70%;
   background-color: rgba(255, 255, 255, 0.85);
   border-radius: 10px;
@@ -29,6 +29,12 @@ body {
   text-align: center;
   padding: 2rem;
   font-family: "Montserrat", sans-serif;
+}
+
+.sponsors-container{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 90vh;
 }
 
 .heading {
@@ -69,8 +75,39 @@ body {
   width: 100%;
 }
 
+.sponsor-card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sponsor-card{
+  width: 30%;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.sponsor-img{
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sponsor-img img{
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 @media screen and (max-width: 768px) {
-  .about-container {
+  .about-container, .sponsors-container {
     width: 90%;
     height: 90vh;
     overflow: scroll;
@@ -82,13 +119,17 @@ body {
   .pot-right {
     display: none;
   }
+
+  .sponsor-card{
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 2560px) {
   .heading{
     font-size: 4.5rem;
   }
-  
+
   .about-container p{
     font-size: 2rem;
   }
