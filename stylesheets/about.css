@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "BlackChancery";
+  src: url("../fonts/blackchancery/BLKCHCRY.TTF");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../assets/Registration.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.about-container, .sponsors-container {
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sponsors-container{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 90vh;
+}
+
+.heading {
+  margin: 0;
+  font-family: "BlackChancery";
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  font-weight: 500;
+}
+
+.pots {
+  width: 18%;
+  position: absolute;
+  bottom: 0;
+  left: -30px;
+}
+
+.lamp {
+  width: 11%;
+  position: absolute;
+  top: 20%;
+  right: 2%;
+}
+
+.pot-right {
+  width: 7%;
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+}
+
+.pots img,
+.lamp img,
+.pot-right img {
+  width: 100%;
+}
+
+.sponsor-card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sponsor-card{
+  width: 30%;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.sponsor-img{
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sponsor-img img{
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+@media screen and (max-width: 768px) {
+  .about-container, .sponsors-container {
+    width: 90%;
+    height: 90vh;
+    overflow: scroll;
+    border-radius: 5px;
+  }
+
+  .pots,
+  .lamp,
+  .pot-right {
+    display: none;
+  }
+
+  .sponsor-card{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .heading{
+    font-size: 4.5rem;
+  }
+
+  .about-container p{
+    font-size: 2rem;
+  }
+}
