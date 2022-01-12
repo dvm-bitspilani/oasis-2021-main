@@ -7,21 +7,34 @@
   box-sizing: border-box;
 }
 
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
 body {
-  background-image: url(../assets/Registration.png);
+  /* background-image: url(../assets/longwall.png);
   background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
+  background-repeat: no-repeat; */
   height: 100vh;
   width: 100vw;
   margin: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
 }
 
-.about-container, .sponsors-container {
+.background {
+  position: absolute;
+  z-index: -20;
+  bottom: 0;
+  left: 0;
+}
+
+.about-container,
+.sponsors-container {
   width: 70%;
   background-color: rgba(255, 255, 255, 0.85);
   border-radius: 10px;
@@ -29,19 +42,27 @@ body {
   text-align: center;
   padding: 2rem;
   font-family: "Montserrat", sans-serif;
+  min-height: 65vh;
+  max-height: 80vh;
 }
 
-.sponsors-container{
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sponsors-container {
   overflow-x: hidden;
   overflow-y: scroll;
-  max-height: 90vh;
+  max-height: 80vh;
 }
 
 .heading {
   margin: 0;
   font-family: "BlackChancery";
-  font-size: 4rem;
-  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-thickness: 2px;
@@ -51,37 +72,48 @@ body {
 .pots {
   width: 18%;
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   left: -30px;
-}
-
-.lamp {
-  width: 11%;
-  position: absolute;
-  top: 20%;
-  right: 2%;
 }
 
 .pot-right {
   width: 7%;
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   right: -5px;
+}
+
+.lamp {
+  width: 11%;
+  position: absolute;
+  top: 25%;
+  right: 2%;
 }
 
 .pots img,
 .lamp img,
-.pot-right img {
+.pot-right img,
+.background img,
+.back-arrow img {
   width: 100%;
 }
 
-.sponsor-card-container{
+.sponsors-container h2 {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+.sponsors-container .heading {
+  margin-bottom: 2rem;
+}
+
+.sponsor-card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.sponsor-card{
+.sponsor-card {
   width: 30%;
   padding: 1rem;
   text-align: center;
@@ -90,47 +122,72 @@ body {
   justify-content: end;
 }
 
-.sponsor-img{
-  width: 80%;
+.sponsor-img {
+  width: 70%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.sponsor-img img{
+.sponsor-img img {
   width: 100%;
 }
 
+.back-arrow {
+  width: 25px;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+}
+
+.frame {
+  height: 100%;
+  z-index: -10;
+  position: absolute;
+}
+
 ::-webkit-scrollbar {
-  width: 0;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0;
+  background: transparent;
 }
 
 @media screen and (max-width: 768px) {
-  .about-container, .sponsors-container {
+  body {
+    background-image: url(../assets/longwall.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .about-container,
+  .sponsors-container {
     width: 90%;
-    height: 90vh;
+    max-height: 85vh;
     overflow: scroll;
     border-radius: 5px;
   }
 
   .pots,
   .lamp,
-  .pot-right {
+  .pot-right,
+  .background {
     display: none;
   }
 
-  .sponsor-card{
+  .sponsor-card {
     width: 100%;
+  }
+
+  .back-arrow{
+    top: 1rem;
   }
 }
 
 @media screen and (min-width: 2560px) {
-  .heading{
+  .heading {
     font-size: 4.5rem;
   }
 
-  .about-container p{
+  .about-container p {
     font-size: 2rem;
   }
 }
