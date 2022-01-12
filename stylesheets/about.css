@@ -168,16 +168,13 @@ body {
 
   .pots,
   .lamp,
-  .pot-right {
+  .pot-right,
+  .background {
     display: none;
   }
 
   .sponsor-card {
     width: 100%;
-  }
-
-  .background {
-    display: none;
   }
 
   .back-arrow{

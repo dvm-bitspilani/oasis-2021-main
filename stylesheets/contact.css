@@ -141,7 +141,19 @@ body {
   }
 
   .oasis-logo {
+    height: 53vh;
+  }
+
+  .oasis-logo img{
+    height: 100%;
+  }
+
+  .pot-right, .pot-left{
     display: none;
+  }
+
+  .heading{
+    margin-top: 1.5rem;
   }
 }
 
