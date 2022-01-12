@@ -8,16 +8,25 @@
 }
 
 body {
-  background-color: #d9d9d9;
+  /* background-image: url(../assets/longwall.png);
   background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
+  background-repeat: no-repeat; */
   height: 100vh;
   width: 100vw;
   margin: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  z-index: -20;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .oasis-logo {
@@ -36,10 +45,13 @@ body {
   width: 80%;
   position: relative;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem 2rem 2rem;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  max-height: 80vh;
 }
 
 .contact-card-container {
@@ -59,9 +71,10 @@ body {
   content: "";
   width: 100%;
   position: absolute;
-  bottom: 3px;
+  bottom: 4px;
   height: 70%;
   z-index: -1;
+  transition: all 0.4s ease;
 }
 
 .contact-img.yellow::before {
@@ -79,7 +92,9 @@ body {
 .contact-img img,
 .pot-left img,
 .pot-right img,
-.back-arrow img {
+.back-arrow img,
+.background img,
+.lamp img {
   width: 100%;
 }
 
@@ -89,14 +104,20 @@ body {
   text-align: center;
 }
 
+/* .contact-card:hover .contact-img::before {
+  height: 30%;
+  bottom: 70%;
+  transition: all 0.4s ease;
+} */
+
 .contact-card h3 {
   margin: 0.5rem 0;
 }
 
 .heading {
-  margin: 0 0 1rem;
+  margin: 0;
   font-family: "BlackChancery";
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-thickness: 2px;
@@ -118,11 +139,18 @@ body {
 }
 
 .pot-right {
-    width: 7%;
-    position: absolute;
-    bottom: -5px;
-    right: 0;
-  }
+  width: 7%;
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+}
+
+.lamp {
+  width: 9%;
+  position: absolute;
+  top: 25%;
+  right: 5px;
+}
 
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
@@ -130,6 +158,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    background-image: url(../assets/longwall.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   .contact-container {
     width: 90%;
     overflow: scroll;
@@ -144,21 +178,31 @@ body {
     height: 53vh;
   }
 
-  .oasis-logo img{
+  .oasis-logo img {
     height: 100%;
   }
 
-  .pot-right, .pot-left{
+  .pot-right,
+  .pot-left,
+  .lamp {
     display: none;
   }
 
-  .heading{
+  .heading {
     margin-top: 1.5rem;
+  }
+
+  .background {
+    display: none;
   }
 }
 
 @media screen and (min-width: 2560px) {
   .contact-img {
     width: 50%;
+  }
+
+  .contact-container{
+    padding-top: 1rem;
   }
 }
