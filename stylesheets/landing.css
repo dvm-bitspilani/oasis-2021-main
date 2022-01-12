@@ -17,7 +17,103 @@ body {
       height: 100vh;
       
 }
+.shining-stars div{
+width: 6px;
+height: 6px;
+background-color: white;
+position: absolute;
+border-radius:50% ;
+animation: twinkle 0.6s infinite alternate-reverse;
+opacity: 0.2;
+box-shadow:
+  3.4px 3.4px 2.7px rgba(0, 0, 0, 0.022),
+  8.7px 8.7px 6.9px rgba(0, 0, 0, 0.031),
+  17.7px 17.7px 14.2px rgba(0, 0, 0, 0.039),
+  36.5px 36.5px 29.2px rgba(0, 0, 0, 0.048),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+filter:blur(1px)
+}
 
+@keyframes twinkle {
+      from{
+            opacity: 0.8;
+      }
+      to{
+            opacity: 0.2;
+      }
+}
+.shining-stars div:nth-child(1){
+      top: 2%;
+      left: 59%;
+      
+
+}
+.shining-stars div:nth-child(2){
+      top: 3%;
+      left: 87%;
+      animation-delay: 0.5s;
+      
+}
+.shining-stars div:nth-child(3){
+      top: 7%;
+      left: 17%;
+      animation-delay: 0.3s;
+      
+}
+.shining-stars div:nth-child(4){
+      top: 4%;
+      left: 40%;
+      animation-delay: 1.5s;
+      
+}
+.shining-stars div:nth-child(5){
+      top: 30%;
+      left: 67%;
+      animation-delay: 0.7s;
+      
+}
+.shining-stars div:nth-child(6){
+      top: 34%;
+      left: 47%;
+      animation-delay: 0.9s;
+      
+}
+.shining-stars div:nth-child(7){
+      top: 39%;
+      left: 51%;
+      animation-delay: 1.3s;
+      
+}
+.shining-stars div:nth-child(8){
+      top: 32%;
+      left: 31%;
+      animation-delay: 0.1s;
+      
+}
+.shining-stars div:nth-child(9){
+      top: 24%;
+      left: 46%;
+      animation-delay: 2s;
+      
+}
+.shining-stars div:nth-child(10){
+      top: 7%;
+      left: 82%;
+      animation-delay: 1.8s;
+      
+}
+.shining-stars div:nth-child(11){
+      top: 22%;
+      left: 84%;
+      animation-delay: 2.4s;
+      
+}
+.shining-stars div:nth-child(12){
+      top: 24%;
+      left: 76%;
+      animation-delay: 1.7s;
+      
+}
 .left-paintings {
       display: flex;
       flex-direction: row;
@@ -36,7 +132,36 @@ body {
 .painting-link {
       display: flex;
       flex-direction: column;
+      animation: shake 1s infinite alternate-reverse linear;
+
 }
+
+.sponsorD .painting-link{
+      animation-delay: 0.3s;  
+     }
+     .contactD .painting-link{
+      animation-delay: 0.6s;  
+     }
+     .videoD .painting-link{
+      animation-delay: 0.9s;  
+     }
+
+.painting-link:hover{
+      animation: none;
+}
+@keyframes shake {
+      from{
+transform: translateY(4px);
+      }
+      to{
+            transform: translateY(-4px);
+
+      }
+}
+/* .painting-link img:nth-child(1){
+   animation-delay: 1s;
+      animation: shake 1s infinite alternate-reverse linear;
+} */
 .main-wrapper-links {
       display: flex;
       justify-content: space-between;
@@ -67,7 +192,7 @@ body {
       top: 10%;
 }
 .oasisIcon img {
-      width: 35%;
+      width: 30%;
 }
 
 .painting-link img:nth-child(3) {
@@ -103,7 +228,7 @@ body {
     top: 20%;
 }
       .oasisIcon img {
-            width: 60%;
+            width: 50%;
       }
 
       .painting-link img:nth-child(1) {
