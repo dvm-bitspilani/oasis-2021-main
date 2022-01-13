@@ -117,14 +117,14 @@ filter:blur(1px)
 .left-paintings {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
       width: 30%;
 }
 
 .right-paintings {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
       width: 30%;
 
 }
@@ -167,13 +167,14 @@ transform: translateY(4px);
       justify-content: space-between;
       position: relative;
       top: 40%;
+      padding: 0 5%;
 }
 
 .paintDiv {
       display: flex;
 }
 .paintDiv a {
-      width: 11vw;
+      width: 11.5vw;
 }
 
 .reg-button {
@@ -265,5 +266,8 @@ transform: translateY(4px);
 
       .paintDiv {
             justify-content: center !important;
+      }
+      .main-wrapper-links{
+            padding: 0 !important;
       }
 }

@@ -2,6 +2,7 @@ body{
     margin: 0;
     overflow-y: hidden;
 }
+body::-webkit-scrollbar { display: none; }
 
 .long-wall{
     position: absolute;
@@ -163,8 +164,8 @@ height: 400px;
 }
 .video-banner img{
     object-fit: contain;
-width: 300px;
-height: 350px;
+    width: 400px;
+    height: 490px;
 }
 
 .plant-pot{
