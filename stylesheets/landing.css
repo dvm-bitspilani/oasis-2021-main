@@ -265,8 +265,15 @@ transform: translateY(4px);
       }
 
       .paintDiv a {
-            width: 64%;
+            width: 64% !important;
       }
+      .sponsorD .painting-link{
+            width: 64%  !important;
+           }
+           .contactD .painting-link{
+            width: 64% !important;
+      
+           }
 
       .paintDiv {
             justify-content: center !important;

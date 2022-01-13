@@ -4,6 +4,16 @@ body{
 }
 body::-webkit-scrollbar { display: none; }
 
+
+.back-arrow img {
+    width: 100%;
+  }
+  .back-arrow {
+    width: 25px;
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+  }  
 .long-wall{
     position: absolute;
     height: 100vh;
@@ -193,10 +203,15 @@ height: 400px;
 width: 72% !important;
 }
 @media(max-width: 768px){
+
 body{
     overflow-x:hidden ;
     overflow-y: auto;
 }
+.back-arrow{
+    position: absolute;
+    top: 1.74rem;
+  }
     .long-wall{
         display: none;
     }
