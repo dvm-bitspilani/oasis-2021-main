@@ -45,6 +45,8 @@ body {
   font-family: "Montserrat", sans-serif;
   min-height: 65vh;
   max-height: 80vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .about-container {
@@ -60,10 +62,9 @@ body {
 }
 
 .heading {
-  margin: 0;
+  margin: 0 0 1rem 0;
   font-family: "BlackChancery";
   font-size: 3.5rem;
-  margin-bottom: 1rem;
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-thickness: 2px;
@@ -163,8 +164,15 @@ body {
   .sponsors-container {
     width: 90%;
     max-height: 85vh;
-    overflow: scroll;
+    overflow-y: scroll;
     border-radius: 5px;
+  }
+
+  .sponsors-container{
+    padding: 1rem 2rem 2rem;}
+
+  .about-container{
+    display: block;
   }
 
   .pots,
