@@ -250,15 +250,19 @@ transform: translateY(4px);
 
       .painting-link img:nth-child(4) {
             display: initial;
+            margin-top:-6px
       }
 
       .left-paintings {
             flex-direction: column-reverse;
             justify-content: space-between;
+            height: 255px;
       }
       .right-paintings {
             flex-direction: column;
             justify-content: space-between;
+            height: 255px;
+      
       }
       .main-wrapper-links {
             top: 50%;
