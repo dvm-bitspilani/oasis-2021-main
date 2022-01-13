@@ -190,7 +190,7 @@ height: 400px;
 }
 
 .comp-3-plate-pc{
-    width: 71%;
+width: 72% !important;
 }
 @media(max-width: 768px){
 body{
