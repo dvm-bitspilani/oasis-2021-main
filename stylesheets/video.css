@@ -115,13 +115,15 @@ align-items: center;
 }
 .video-plate img{
     width: 60%;
+    margin-right: 3px;
+
 }
 .video-plate{
     text-align: center;
 }
 .lamp{
     position: absolute;
-    width: 100px;
+    width: 110px;
     margin-bottom: 30px;
     top: 40px;
 }
@@ -146,7 +148,7 @@ height: 400px;
 
 .statue-img{
     width: 200px;
-    margin-bottom: -260px;
+    margin-bottom: -154%;
 }
 .podium{
     display: flex;
@@ -178,7 +180,7 @@ height: 400px;
     width: 250px;
 }
 .pot-2{
-    left: 2400px;
+    left: 2500px;
 }
 .pot-2 img{
     width: 190px;
@@ -187,7 +189,9 @@ height: 400px;
     display: none;
 }
 
-
+.comp-3-plate-pc{
+    width: 71%;
+}
 @media(max-width: 768px){
 body{
     overflow-x:hidden ;
@@ -246,7 +250,7 @@ body{
     display: none;
 }
 .video-plate img{
-    width: 65%
+    width: 65%;
 }
 .video-plate{
     width: 160px;
