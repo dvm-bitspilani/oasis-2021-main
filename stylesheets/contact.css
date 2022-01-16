@@ -69,6 +69,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .contact-img::before {
@@ -95,7 +96,6 @@ body {
 
 .contact-img img{
   height: 100%;
-  width: 100%;
 }
 
 .pot-left img,
