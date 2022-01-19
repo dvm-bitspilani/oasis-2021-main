@@ -5,11 +5,11 @@
     height: 60px;
     position: absolute;
     right: 30px;
-  
+    z-index: 20;
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    top: 25px;
     cursor: pointer;
     /* border: 5px solid #fff; */
     transition: all 0.5s ease-in-out;
@@ -51,6 +51,45 @@
   .menu-btn.open .menu-btn__burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: rgba(46, 51, 36, 1);
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .sidenav img{
+    width: 300px;
+  }
+  .sidenav a {
+    margin: 0 90px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
   
 
   @media (max-width:768px) {
@@ -60,4 +99,10 @@
         right: 20px;
         top: 10px;
     }
+    .sidenav img{
+      width: 200px;
+    }
+    .sidenav a {
+      margin: 0 30px;}
+
   }
