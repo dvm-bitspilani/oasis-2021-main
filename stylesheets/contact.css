@@ -45,13 +45,18 @@ body {
   width: 80%;
   position: relative;
   text-align: center;
-  padding: 1rem 2rem 2rem;
+  padding: 0.5rem 2rem 1rem;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
   background-color: rgba(255, 255, 255, 0.85);
   border-radius: 10px;
-  max-height: 83vh;
+  max-height: 90vh;
+  top: -3%;
+}
+
+.dev-container{
+  width: 70%;
 }
 
 .contact-card-container {
@@ -122,6 +127,10 @@ body {
   margin: 0.5rem 0;
 }
 
+.dev-container .contact-card h3{
+  margin: 1rem 0;
+}
+
 .heading {
   margin: 0;
   font-family: "BlackChancery";
@@ -178,6 +187,7 @@ body {
     max-height: 84vh;
     border-radius: 5px;
     padding: 2rem;
+    top: 0;
   }
 
   .contact-card {
@@ -209,11 +219,11 @@ body {
 }
 
 @media screen and (min-width: 2560px) {
-  .contact-img {
-    width: 50%;
+  .contact-img{
+    height: 200px;
   }
 
   .contact-container{
-    padding-top: 1rem;
+    padding: 2rem 2rem;
   }
 }
