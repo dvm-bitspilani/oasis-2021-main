@@ -21,3 +21,6 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+window.onload = function () {
+  document.getElementsByClassName("loader")[0].style.display = "none";
+}
