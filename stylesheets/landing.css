@@ -40,14 +40,6 @@
       text-align: center;
 }
 
-.oasisIconLoader svg path {
-      /* fill: transparent; */
-      /* stroke-dashoffset: 0;
-      -webkit-animation: line-complete 30s linear forwards;
-      animation: line-complete 30s linear forwards; */
-}
-
-
     .oasisIconLoader svg path {
       stroke-dasharray: 1000;
       stroke-dashoffset: 1000;

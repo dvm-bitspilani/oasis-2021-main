@@ -3,6 +3,69 @@
   src: url("../fonts/blackchancery/BLKCHCRY.TTF");
 }
 
+
+
+.loader{
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10000000000;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.frame-loader{
+  width: 20%;
+  border: 0.1px solid rgb(185, 168, 67);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 8px rgb(185, 168, 67);
+  animation: box linear 2s alternate infinite;     
+}
+
+@keyframes box {
+  from{
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 8px rgb(185, 168, 67);
+
+  }
+  to{
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 40px rgb(185, 168, 67);
+
+  }
+}
+.oasisIconLoader svg {
+  width: 80%;
+}
+.oasisIconLoader{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.oasisIconLoader svg path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear alternate infinite;
+  fill: transparent;
+  stroke-width: 0;
+
+}
+
+@keyframes dash {
+from {
+    stroke-dashoffset: 1000;
+    fill: transparent;
+  stroke-width: 0;
+
+  }
+ to {
+    stroke-dashoffset: 000;
+    fill: white;
+  stroke-width: 5;
+
+  }
+}
+
+
 * {
   box-sizing: border-box;
 }
