@@ -217,6 +217,8 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .frame-loader{
+    width: 50%;}
   body {
     background-image: url(../assets/longwall.png);
     background-size: cover;

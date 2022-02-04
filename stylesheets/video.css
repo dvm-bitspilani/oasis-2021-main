@@ -267,7 +267,8 @@ height: 400px;
 width: 72% !important;
 }
 @media(max-width: 768px){
-
+    .frame-loader{
+        width: 50%;}
 body{
     overflow-x:hidden ;
     overflow-y: auto;
