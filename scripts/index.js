@@ -8,9 +8,12 @@ $menuBtn.addEventListener("click", () => {
   if (!isMenuOpen) {
     $menuBtn.classList.add("open");
     openNav();
+    document.getElementsByClassName("main-div")[0].style.opacity = 0.4;
   } else {
     $menuBtn.classList.remove("open");
     closeNav();
+    document.getElementsByClassName("main-div")[0].style.opacity = 1;
+
   }
 
   isMenuOpen = !isMenuOpen;
