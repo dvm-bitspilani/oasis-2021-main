@@ -308,7 +308,9 @@ transform: translateY(4px);
       text-decoration: none;
 }
 @media (max-width: 768px) {
-
+.icon-desk{
+      display: none !important;
+}
       .icon-side{
           
           margin-top: 95%;
