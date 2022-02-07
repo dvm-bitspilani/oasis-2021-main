@@ -9,10 +9,14 @@ $menuBtn.addEventListener("click", () => {
     $menuBtn.classList.add("open");
     openNav();
     document.getElementsByClassName("main-div")[0].style.opacity = 0.4;
+    document.getElementsByClassName("icon-desk")[0].style.display= "none";
+
   } else {
     $menuBtn.classList.remove("open");
     closeNav();
     document.getElementsByClassName("main-div")[0].style.opacity = 1;
+    document.getElementsByClassName("icon-desk")[0].style.display= "flex";
+
 
   }
 

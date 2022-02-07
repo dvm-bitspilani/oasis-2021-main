@@ -279,7 +279,34 @@ transform: translateY(4px);
       justify-content: flex-start;
 }
 
+.icons{
+      font-size: 28px;
+    position: absolute;
+    bottom: 2%;
+    display: flex;
+    width: 7%;
+    justify-content: space-evenly;
+}
+.icon-side{
+      position: initial;
+    width: initial;
+    margin-top: 10%;
+ justify-content: space-evenly;
+ display: flex;
+    opacity: 1;
+    align-items: center;
+}
+.icon-side a{margin: 0!important;}
+.icon-side .horiLine{
+      width: 100px;
+      height: 2px;
+      background-color: white;
+}
 
+.icons a{
+      color: white !important;
+      text-decoration: none;
+}
 @media (max-width: 768px) {
       .main-div {
             background: url(../assets/mobile/mobileWall.png) no-repeat;
