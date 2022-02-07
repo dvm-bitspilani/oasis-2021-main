@@ -308,6 +308,18 @@ transform: translateY(4px);
       text-decoration: none;
 }
 @media (max-width: 768px) {
+
+      .icon-side{
+          
+          margin-top: 100%;
+ justify-content: center;
+      
+      }
+      .horiLine{
+            /* display:none; */
+            width: 45px !important;
+            height: 0.1px !important;
+      }
       .main-div {
             background: url(../assets/mobile/mobileWall.png) no-repeat;
             background-size: 100% 100%;
