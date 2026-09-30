@@ -1,0 +1,19 @@
+{
+  "name": "dvm-portfolio-oasis-2021",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "npm run build && wrangler pages dev dist",
+    "build": "node scripts/build.mjs",
+    "preview": "wrangler pages dev dist",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm test && npm run build",
+    "deploy": "npm run build && CLOUDFLARE_ACCOUNT_ID=e6ad8a6f22a88b57a02e176325692373 wrangler pages deploy dist --project-name dvm-portfolio-oasis-2021"
+  },
+  "devDependencies": {
+    "@fontsource/montserrat": "5.3.0",
+    "wrangler": "4.145.0"
+  }
+}

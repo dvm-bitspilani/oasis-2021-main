@@ -7,16 +7,19 @@
                   content="width=device-width, initial-scale=1.0"
             />
             <title>Oasis</title>
-           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
             <link rel="stylesheet" href="./stylesheets/landing.css" />
             <link rel="stylesheet" href="./stylesheets/navbar.css" />
-      </head>
+          <link rel="stylesheet" href="./stylesheets/fonts.css">
+    <link rel="stylesheet" href="./stylesheets/archive.css">
+    <link rel="canonical" href="https://oasis2021.bits-oasis.org/">
+</head>
 
       <body>
+<a class="archive-notice" href="./index.html">OASIS 2021 · DVM portfolio archive</a>
 
             <div class="loader">
 
-      <img src="./assets/pc/frameLoader.png" alt="" class="frame-loader">
+      <img src="./assets/pc/frameLoader.webp" alt="" class="frame-loader">
 
 
 <div class="oasisIconLoader">
@@ -30,19 +33,19 @@
             </div>
             </div>
             <section class="main-section-landing">
-                  <div class="menu-btn">
+                  <button class="menu-btn" type="button" aria-label="Open room navigation" aria-expanded="false" aria-controls="mySidenav">
                         <div class="menu-btn__burger"></div>
-                  </div>
+                  </button>
                   <div id="mySidenav" class="sidenav">
-                        <a href="./about.html"><img src="./assets/pc/about.svg" alt="" ></a>
-                        <a href="./sponsors.html"><img src="./assets/pc/spons.svg" alt="" ></a>
-                        <a href="./videos.html"><img src="./assets/pc/Frame 6.svg" alt="" ></a>
-                        <a href="./contact.html"><img src="./assets/pc/contact.svg" alt="" ></a>
-                        <a href="./developers.html"><img src="./assets/pc/Frame 7.svg" alt="" ></a>
+                        <a href="./about.html" aria-label="About Oasis"><img src="./assets/pc/about.svg" alt="" ></a>
+                        <a href="./sponsors.html" aria-label="Sponsors"><img src="./assets/pc/spons.svg" alt="" ></a>
+                        <a href="./videos.html" aria-label="Videos"><img src="./assets/pc/Frame 6.svg" alt="" ></a>
+                        <a href="./contact.html" aria-label="Contact"><img src="./assets/pc/contact.svg" alt="" ></a>
+                        <a href="./developers.html" aria-label="Developers"><img src="./assets/pc/Frame 7.svg" alt="" ></a>
                         <div class="icons icon-side">
                               <div class="horiLine"></div>
-                              <a href="https://www.facebook.com/oasis.bitspilani/"><i class="fab fa-facebook-f"></i></a></i>
-                              <a href="https://www.instagram.com/bitsoasis/?hl=en"><i class="fab fa-instagram"></i></a>
+                              <a href="https://www.facebook.com/oasis.bitspilani/" aria-label="Oasis on Facebook"><i class="fab fa-facebook-f"></i></a>
+                              <a href="https://www.instagram.com/bitsoasis/?hl=en" aria-label="Oasis on Instagram"><i class="fab fa-instagram"></i></a>
                               <div class="horiLine"></div>
                         </div>
                       </div>
@@ -69,7 +72,7 @@
                         <div class="main-wrapper-links">
                               <div class="left-paintings">
                                     <div class="paintDiv">
-                                          <a href="./about.html" class="painting-link" >
+                                          <a href="./about.html" aria-label="About Oasis" class="painting-link" >
                                                 <img
                                                       src="./assets/pc/aboutPainting.svg"
                                                       alt=""
@@ -85,8 +88,8 @@
                                                 <img
                                                       src="./assets/mobile/aboutButtonM.svg"
                                                       alt=""
-                                                /> 
-                                             
+                                                />
+
                                           </a>
                                     </div>
 
@@ -94,7 +97,7 @@
                                           class="paintDiv sponsorD"
                                           style="align-items: center"
                                     >
-                                          <a href="./sponsors.html" class="painting-link" >
+                                          <a href="./sponsors.html" aria-label="Sponsors" class="painting-link" >
                                                 <img
                                                       src="./assets/pc/sponsorPainting.svg"
                                                       alt=""
@@ -111,7 +114,7 @@
                                                 src="./assets/mobile/sponsorButtonM.svg"
                                                 alt=""
                                           />
-                                                
+
                                           </a>
                                     </div>
                               </div>
@@ -120,7 +123,7 @@
                                           class="paintDiv contactD"
                                           style="align-items: center"
                                     >
-                                          <a href="./contact.html" class="painting-link" >
+                                          <a href="./contact.html" aria-label="Contact" class="painting-link" >
                                                 <img
                                                       src="./assets/pc/contactPainting.svg"
                                                       alt=""
@@ -141,7 +144,7 @@
                                           </a>
                                     </div>
                                     <div class="paintDiv .videoD">
-                                          <a href="./videos.html" class="painting-link" >
+                                          <a href="./videos.html" aria-label="Videos" class="painting-link" >
                                                 <img
                                                       src="./assets/pc/eventPainting.svg"
                                                       alt=""
@@ -164,7 +167,7 @@
                               </div>
                         </div>
 
-                        <div class="icons icon-desk"><a href="https://www.facebook.com/oasis.bitspilani/"><i class="fab fa-facebook-f"></i></a></i><a href="https://www.instagram.com/bitsoasis/?hl=en"><i class="fab fa-instagram"></i></a></div>
+                        <div class="icons icon-desk"><a href="https://www.facebook.com/oasis.bitspilani/" aria-label="Oasis on Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/bitsoasis/?hl=en" aria-label="Oasis on Instagram"><i class="fab fa-instagram"></i></a></div>
                   </div>
                   <!-- <div class="reg-button">
                         <a href="/registration.html"
@@ -175,6 +178,6 @@
                         /></a>
                   </div> -->
             </section>
-            <script src="./scripts/index.js"></script>
+            <script src="./scripts/index.js" defer></script>
       </body>
 </html>

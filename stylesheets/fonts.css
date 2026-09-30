@@ -1,0 +1,9 @@
+/* Preserve the original typefaces. Gilroy aliases use the original CDN font binaries. */
+@font-face { font-family: 'Gilroy-Medium'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/gilroy/Gilroy-Medium.woff') format('woff'); }
+@font-face { font-family: 'Gilroy-Regular'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/gilroy/Gilroy-Regular.woff') format('woff'); }
+@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 500; font-display: swap; src: url('../fonts/montserrat/montserrat-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Font Awesome 6 Brands'; font-style: normal; font-weight: 400; font-display: block; src: url('../fonts/icons/fa-brands-400.woff2') format('woff2'); }
+.fab { font-family: 'Font Awesome 6 Brands'; font-weight: 400; font-style: normal; display: inline-block; line-height: 1; }
+.fa-facebook-f::before { content: '\f39e'; }
+.fa-instagram::before { content: '\f16d'; }
+@font-face { font-family: 'BlackChancery'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/blackchancery/BLKCHCRY.TTF') format('truetype'); }

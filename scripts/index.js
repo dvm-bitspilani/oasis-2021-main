@@ -1,34 +1,20 @@
-window.onload = function () {
-  document.getElementsByClassName("loader")[0].style.display = "none";
-}
-
-const $menuBtn = document.querySelector(".menu-btn");
-let isMenuOpen = false;
-$menuBtn.addEventListener("click", () => {
-  if (!isMenuOpen) {
-    $menuBtn.classList.add("open");
-    openNav();
-    document.getElementsByClassName("main-div")[0].style.opacity = 0.4;
-    document.getElementsByClassName("icon-desk")[0].style.display= "none";
-
-  } else {
-    $menuBtn.classList.remove("open");
-    closeNav();
-    document.getElementsByClassName("main-div")[0].style.opacity = 1;
-    document.getElementsByClassName("icon-desk")[0].style.display= "flex";
-
-
-  }
-
-  isMenuOpen = !isMenuOpen;
-});
-
-
-function openNav() {
-  if (screen.width < 768) document.getElementById("mySidenav").style.width = "300px";
- else  document.getElementById("mySidenav").style.width = "500px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+// Room pages do not all contain a menu. Initialize only controls that exist.
+for (const loader of document.querySelectorAll('.loader')) loader.hidden = true;
+const menu = document.querySelector('.menu-btn');
+const nav = document.getElementById('mySidenav');
+if (menu && nav) {
+  let open = false;
+  const setOpen = (value) => {
+    open = value;
+    menu.classList.toggle('open', open);
+    menu.setAttribute('aria-expanded', String(open));
+    menu.setAttribute('aria-label', open ? 'Close room navigation' : 'Open room navigation');
+    nav.style.width = open ? (window.innerWidth < 768 ? '300px' : '500px') : '0';
+    const room = document.querySelector('.main-div');
+    const icons = document.querySelector('.icon-desk');
+    if (room) room.style.opacity = open ? '0.4' : '1';
+    if (icons) icons.style.display = open ? 'none' : 'flex';
+  };
+  menu.addEventListener('click', () => setOpen(!open));
+  document.addEventListener('keydown', (event) => { if (event.key === 'Escape') setOpen(false); });
 }

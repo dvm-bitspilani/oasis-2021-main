@@ -5,25 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrations</title>
-    <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
     <link rel="stylesheet" href="./stylesheets/registration.css">
 
+    <link rel="stylesheet" href="./stylesheets/fonts.css">
+    <link rel="stylesheet" href="./stylesheets/archive.css">
+    <link rel="canonical" href="https://oasis2021.bits-oasis.org/registration.html">
 </head>
 
 <body>
+<a class="archive-notice" href="./index.html">OASIS 2021 · DVM portfolio archive</a>
     <div class="registration-container">
         <h1>Registration</h1>
 
-        <form action="" method="POST">
+        <p class="demo-notice">Portfolio demo: use the fictional details below. Nothing is sent or stored; registration for this historical event is closed.</p>
+        <form id="registration-demo" autocomplete="off">
             <div class="input-row">
                 <div class="input-cell">
-                    <label for="">Name</label>
-                    <input type="text" required>
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" value="Sample Visitor" maxlength="100" required>
                     <p class="input-explanation">Type in your first and last name here</p>
                 </div>
                 <div class="input-cell">
-                    <label for="" class="not-required">College </label>
-                    <input type="text" required>
+                    <label for="college" class="not-required">College </label>
+                    <input id="college" name="college" type="text" value="Sample College" maxlength="100" required>
                     <p class="input-explanation">Select your College Name</p>
                 </div>
             </div>
@@ -31,23 +35,23 @@
             <div class="input-row">
 
                 <div class="input-column">
-                    <div class="input-cell" class="input-cell" style="margin-bottom: 5%;">
-                        <label for="">Email</label>
-                        <input type="email" required>
+                    <div class="input-cell" style="margin-bottom: 5%;">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" value="visitor@example.com" maxlength="100" required>
                         <p class="input-explanation">Type in your Email</p>
                     </div>
-                    <div class="input-cell" class="input-cell" style="margin-bottom: 5%;">
-                        <label for="">Phone </label>
-                        <input type="tel" pattern="[0-9]{5}-[0-9]{5}" required>
+                    <div class="input-cell" style="margin-bottom: 5%;">
+                        <label for="phone">Phone </label>
+                        <input id="phone" name="phone" type="tel" value="99999-99999" maxlength="11" pattern="[0-9]{5}-[0-9]{5}" required>
                         <p class="input-explanation phone-explanation">Type your phone number here</p>
                     </div>
-                    <div class="input-cell" class="input-cell" style="margin-bottom: 5%;">
-                        <label for="">City </label>
-                        <input type="text" required>
+                    <div class="input-cell" style="margin-bottom: 5%;">
+                        <label for="city">City </label>
+                        <input id="city" name="city" type="text" value="Pilani" maxlength="100" required>
                         <p class="input-explanation">Type in your City Name</p>
                     </div>
-                    <div class="input-cell" class="input-cell">
-                        <label for="" class="not-required">Year Of Study </label>
+                    <div class="input-cell">
+                        <label for="yearofstudy" class="not-required">Year Of Study </label>
                         <select name="year" id="yearofstudy" required>
                             <option value="1st">1st</option>
                             <option value="2nd">2nd</option>
@@ -72,7 +76,7 @@
                                   <label class="radio-label not-required" for="female">Female</label>
                             </div>
                             <div class="radio-option" style="width: -webkit-fill-available;">
-                                  <input type="radio" id="other" name="gender" value="other">
+                                  <input type="radio" id="other" name="gender" value="other" checked required>
                                   <label class="radio-label not-required" for="other">Rather Not Say</label>
                             </div>
                         </div>
@@ -83,12 +87,12 @@
                         <div class="radio-wrapper">
 
                             <div class="radio-option">
-                                  <input type="radio" id="male" name="head" value="true">
-                                  <label class="radio-label not-required" for="male">Yes</label>
+                                  <input type="radio" id="head-true" name="head" value="true">
+                                  <label class="radio-label not-required" for="head-true">Yes</label>
                             </div>
                             <div class="radio-option">
-                                  <input type="radio" id="female" name="head" value="false">
-                                  <label class="radio-label not-required" for="female">No</label>
+                                  <input type="radio" id="head-false" name="head" value="false" checked required>
+                                  <label class="radio-label not-required" for="head-false">No</label>
                             </div>
 
                         </div>
@@ -99,12 +103,12 @@
                         <div class="radio-wrapper">
 
                             <div class="radio-option">
-                                  <input type="radio" id="male" name="head" value="true">
-                                  <label class="radio-label not-required" for="male">Yes</label>
+                                  <input type="radio" id="mentor-true" name="mentor" value="true">
+                                  <label class="radio-label not-required" for="mentor-true">Yes</label>
                             </div>
                             <div class="radio-option">
-                                  <input type="radio" id="female" name="head" value="false">
-                                  <label class="radio-label not-required" for="female">No</label>
+                                  <input type="radio" id="mentor-false" name="mentor" value="false" checked required>
+                                  <label class="radio-label not-required" for="mentor-false">No</label>
                             </div>
 
                         </div>
@@ -116,14 +120,16 @@
             </div>
 
             <div class="register-wrapper">
-                <input type="submit" name="Register" value="Register" id="register">
+                <input type="submit" name="Register" value="Preview demo" id="register">
             </div>
+            <p id="demo-result" class="demo-result" role="status" aria-live="polite"></p>
         </form>
     </div>
     <div class="registration-stand">
 
     </div>
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/index.js" defer></script>
+<script type="module" src="./scripts/registration.js"></script>
 </body>
 
 </html>

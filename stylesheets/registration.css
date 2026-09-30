@@ -1,10 +1,11 @@
 @font-face {
+  font-display: swap;
     font-family: "BlackChancery";
     src: url("../fonts/blackchancery/BLKCHCRY.TTF");
 }
 
 body {
-    background-image: url(../assets/Registration.png);
+    background-image: url(../assets/Registration.webp);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

@@ -1,0 +1,8 @@
+BlackChancery: original repository fonts/blackchancery/BLKCHCRY.TTF, unchanged.
+Gilroy Medium and Regular: original site CDN font files, self-hosted from
+https://fonts.cdnfonts.com/s/16219/Gilroy-Medium.woff
+https://fonts.cdnfonts.com/s/16219/Gilroy-Regular.woff
+Font Awesome 6 Brands: original site version 6.0.0-beta3, self-hosted from
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-brands-400.woff2
+Font Awesome font license: SIL OFL 1.1; https://fontawesome.com/license/free
+Montserrat 500 normal: @fontsource/montserrat 5.3.0, font license copied by build.
