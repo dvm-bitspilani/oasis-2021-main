@@ -1,0 +1,6 @@
+.menu-btn { background: transparent; border: 0; padding: 0; color: inherit; }
+.video-play { width: 340px; height: 200px; border: 0; background: #211710; color: #e7d5aa; cursor: pointer; font: 36px/1.4 'BlackChancery', Georgia, serif; }
+.video-play span { display: block; font: 15px/1.4 'Montserrat', sans-serif; }
+:focus-visible { outline: 3px solid #e5bf66; outline-offset: 3px; }
+@media (max-width: 768px) { .video-play { width: 182px; height: 105px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; scroll-behavior: auto !important; transition: none !important; } }

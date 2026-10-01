@@ -1,3 +1,5 @@
+This document records the first restoration pass. Current registration, visible wording, caching and measurements are documented in [EDITION_REFINEMENT.md](EDITION_REFINEMENT.md).
+
 # OASIS 2021 portfolio restoration
 
 ## Baseline and preserved design

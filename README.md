@@ -1,6 +1,6 @@
-# OASIS 2021 portfolio archive
+# OASIS 2021
 
-The original museum rooms, artwork, navigation and typography from the BITS Pilani cultural festival website are preserved as a static frontend archive. Registration is a labelled local demo with fictional sample details; it sends and stores nothing. Historical videos load from YouTube only when played.
+The original museum rooms, artwork, navigation and typography from the BITS Pilani cultural festival website are preserved. Direct registration visits show “Registration is closed for this edition”; the original entrance registration link remains commented out. Historical videos load from YouTube when played.
 
 Use Node.js 22 or newer:
 
@@ -11,4 +11,4 @@ npm run preview
 npm run deploy
 ```
 
-The production artifact is `dist/`, deployed to Cloudflare Pages project `dvm-portfolio-oasis-2021` using pinned Wrangler. Deployment uses the account environment variable in the script and your existing Wrangler login. The planned canonical domain is `oasis2021.bits-oasis.org`; custom-domain setup is handled separately. See `PORTFOLIO_RESTORATION.md` for verification and archive limitations.
+The production artifact is `dist/`, deployed to Cloudflare Pages project `dvm-portfolio-oasis-2021` using pinned Wrangler. Assets have content hashes and immutable cache headers; HTML revalidates. Deployment uses the existing account environment variable and Wrangler login. The canonical domain is `oasis2021.bits-oasis.org`; domain setup is handled separately. See `EDITION_REFINEMENT.md` for preservation evidence, artifact measurements and verification.

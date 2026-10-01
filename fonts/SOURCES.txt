@@ -6,3 +6,5 @@ Font Awesome 6 Brands: original site version 6.0.0-beta3, self-hosted from
 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-brands-400.woff2
 Font Awesome font license: SIL OFL 1.1; https://fontawesome.com/license/free
 Montserrat 500 normal: @fontsource/montserrat 5.3.0, font license copied by build.
+
+The original BlackChancery and Gilroy fonts are repackaged as WOFF2, with all glyph outlines and metrics retained. social-brands.woff2 retains the original Font Awesome Facebook and Instagram glyphs only. Originals remain in source for provenance.

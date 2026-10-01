@@ -1,0 +1,26 @@
+[
+  {
+    "original": "fonts/blackchancery/BLKCHCRY.TTF",
+    "woff2": "fonts/blackchancery/BLKCHCRY.woff2",
+    "glyphsVerified": 217,
+    "outlinesAndMetricsEqual": true
+  },
+  {
+    "original": "fonts/gilroy/Gilroy-Medium.woff",
+    "woff2": "fonts/gilroy/Gilroy-Medium.woff2",
+    "glyphsVerified": 556,
+    "outlinesAndMetricsEqual": true
+  },
+  {
+    "original": "fonts/gilroy/Gilroy-Regular.woff",
+    "woff2": "fonts/gilroy/Gilroy-Regular.woff2",
+    "glyphsVerified": 556,
+    "outlinesAndMetricsEqual": true
+  },
+  {
+    "original": "fonts/icons/fa-brands-400.woff2",
+    "woff2": "fonts/icons/social-brands.woff2",
+    "glyphsVerified": 2,
+    "outlinesAndMetricsEqual": true
+  }
+]

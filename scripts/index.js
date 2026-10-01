@@ -1,5 +1,4 @@
 // Room pages do not all contain a menu. Initialize only controls that exist.
-for (const loader of document.querySelectorAll('.loader')) loader.hidden = true;
 const menu = document.querySelector('.menu-btn');
 const nav = document.getElementById('mySidenav');
 if (menu && nav) {
@@ -17,4 +16,21 @@ if (menu && nav) {
   };
   menu.addEventListener('click', () => setOpen(!open));
   document.addEventListener('keydown', (event) => { if (event.key === 'Escape') setOpen(false); });
+}
+
+const warmed = new Set();
+for (const link of document.querySelectorAll('a[data-prefetch-assets]')) {
+  const warm = () => {
+    for (const href of [link.href, ...link.dataset.prefetchAssets.split(' ')]) {
+      if (!href || warmed.has(href)) continue;
+      const resource = document.createElement('link');
+      resource.rel = 'prefetch';
+      resource.href = href;
+      document.head.append(resource);
+      warmed.add(href);
+    }
+  };
+  link.addEventListener('pointerenter', warm, { once: true });
+  link.addEventListener('focus', warm, { once: true });
+  link.addEventListener('touchstart', warm, { once: true, passive: true });
 }

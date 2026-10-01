@@ -1,0 +1,90 @@
+[
+  {
+    "asset": "assets/pc/eventPainting.svg",
+    "dimensions": [
+      699,
+      712
+    ],
+    "pngBytes": 207467,
+    "webpBytes": 114782,
+    "pixelsEqual": true,
+    "vectorMarkupEqual": true
+  },
+  {
+    "asset": "assets/pc/contactPainting.svg",
+    "dimensions": [
+      520,
+      540
+    ],
+    "pngBytes": 167380,
+    "webpBytes": 100264,
+    "pixelsEqual": true,
+    "vectorMarkupEqual": true
+  },
+  {
+    "asset": "assets/pc/aboutPainting.svg",
+    "dimensions": [
+      177,
+      183
+    ],
+    "pngBytes": 87374,
+    "webpBytes": 66150,
+    "pixelsEqual": true,
+    "vectorMarkupEqual": true
+  },
+  {
+    "asset": "assets/pc/sponsorPainting.svg",
+    "dimensions": [
+      672,
+      719
+    ],
+    "pngBytes": 299551,
+    "webpBytes": 137868,
+    "pixelsEqual": true,
+    "vectorMarkupEqual": true
+  },
+  {
+    "asset": "assets/mobile/contactPaintingM.svg",
+    "dimensions": [
+      236,
+      288
+    ],
+    "pngBytes": 69282,
+    "webpBytes": 44060,
+    "pixelsEqual": true,
+    "vectorMarkupEqual": true
+  },
+  {
+    "asset": "assets/mobile/eventPaintingM.svg",
+    "dimensions": [
+      699,
+      712
+    ],
+    "pngBytes": 207467,
+    "webpBytes": 114782,
+    "pixelsEqual": true,
+    "vectorMarkupEqual": true
+  },
+  {
+    "asset": "assets/mobile/aboutPaintingM.svg",
+    "dimensions": [
+      719,
+      843
+    ],
+    "pngBytes": 229861,
+    "webpBytes": 81216,
+    "pixelsEqual": true,
+    "vectorMarkupEqual": true
+  },
+  {
+    "asset": "assets/mobile/sponsorPaintingM.svg",
+    "dimensions": [
+      294,
+      323
+    ],
+    "pngBytes": 60674,
+    "webpBytes": 22488,
+    "pixelsEqual": true,
+    "vectorMarkupEqual": true
+  }
+]

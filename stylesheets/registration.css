@@ -1,253 +1,28 @@
-@font-face {
-  font-display: swap;
-    font-family: "BlackChancery";
-    src: url("../fonts/blackchancery/BLKCHCRY.TTF");
-}
-
 body {
-    background-image: url(../assets/Registration.webp);
+    background-image: url('../assets/Registration.webp');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-height: 100svh;
     margin: 0;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
 }
-
-.registration-container {
-    width: 45vw;
-    height: 95vh;
-    background-color: white;
-    padding: 2.5% 5%;
-    overflow: scroll;
-}
-
-.registration-container>h1 {
-    font-family: 'BlackChancery';
-    font-weight: 500;
-    font-size: 4rem;
-    margin: 0;
-    text-decoration: underline;
-}
-
-
-.input-row {
-    display: flex;
-    margin-top: 4%;
-    justify-content: space-between;
-}
-
-label {
-    font-family: 'Gilroy-Medium', sans-serif;
-    font-size: 1rem;
-}
-
-label::after {
-    content: '*';
-    color: #FF0000;
-    font-size: 1.25rem;
-    margin: 0 2.5% 5%
-}
-
-input,
-select {
-    border: none;
-    margin: 0 3%;
-    border-bottom: 1px solid rgb(89, 89, 89);
-    background: none;
-    width: 90%;
-    padding: 2%;
-    font-size: 1.45rem;
-    margin-left: 0;
-    border-color: #C4C4C4;
-    color: #4D4C4C;
-}
-
-input:focus,
-select:focus {
-    outline: 0.5px solid black;
-}
-
-select {
-    font-size: 0.75rem;
-}
-
-.input-explanation {
-    margin: 0;
-    padding: 2%;
-    font-family: 'Gilroy-Regular', sans-serif;
-    font-size: 0.8rem;
-    width: 88.75%;
-    position: relative;
-    right: 1px;
-}
-
-
-/* //////////Radio Buttons ////////// */
-
-.radio-cell {
-    margin: 10% 0;
-}
-
-.radio-cell:nth-child(1) {
-    margin-top: 0;
-}
-
-.input-column:nth-child(2) {
-    width: 48%;
-}
-
-.radio-heading {
-    font-family: 'Gilroy-Medium';
-    font-size: 1rem;
-    margin-bottom: 0;
-}
-
-.radio-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.radio-option {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.radio-option:nth-child(2) {
-    margin: 0 10%;
-}
-
-input[type="radio"] {
-    width: 20px !important;
-    height: 20px !important;
-    border: black;
-}
-
-input[type="radio"]:focus {
-    outline: none;
-}
-
-.radio-explanation {
-    padding: 1%;
-    margin: 1% 0 4% 0;
-}
-
-.radio-label {
-    font-size: 0.8rem;
-}
-
-
-.not-required::after {
-    content: '';
-}
-
-
-.registration-stand {
-    width: 5vw;
-    height: 4vw;
-    background: linear-gradient(90deg, #FBC926 -0.18%, #FFFBCC 22.22%, #F8F0BB 26.89%, #E7D28E 37.16%, #CCA246 50.22%, #C3922E 54.89%, #EED688 80.09%, #FFFBCC 92.22%);
-}
-
-
-/* ///////////Register Button /////// */
-
-.register-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-}
-
-#register {
-    width: 35%;
-    margin-right: 0;
-    margin-left: auto;
-    font-family: 'BlackChancery';
-    letter-spacing: 2px;
-    font-size: 2rem;
-    background-color: #F1EBDE;
+.registration-back { position: absolute; top: 1rem; left: 1rem; display: grid; place-items: center; width: 44px; height: 44px; }
+.registration-back img { object-fit: contain; }
+#registration-closed {
+    box-sizing: border-box;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    width: min(360px, calc(100vw - 32px));
+    padding: 24px;
+    border: 1px solid #a98d52;
     border-radius: 3px;
-    border: none;
-    position: relative;
-    border: 1.16px solid #125953;
-    cursor: pointer;
+    background: #f1ebde;
+    color: #0a322f;
+    font: 16px/1.5 'Gilroy-Regular', sans-serif;
 }
-
-.register-wrapper::before {
-    content: '';
-    position: absolute;
-    z-index: 0;
-    height: 70px;
-    width: 35%;
-    right: -5px;
-    bottom: -5px;
-    background-color: #0A322F;
-    border-radius: 3px;
-}
-
-
-/* For paragraph in focus
-{
-background-color: black;
-color: white;
-width: 88%;
-} */
-
-
-@media only screen and (max-width:968px) {
-
-    .input-row {
-        flex-direction: column;
-    }
-
-    .registration-container>h1 {
-        font-size: 2.5rem;
-        margin: 0;
-        text-align: center;
-    }
-
-    .input-column:nth-child(2) {
-        width: 95%;
-    }
-
-    .register-wrapper {
-        justify-content: center;
-    }
-
-    #register {
-        width: 70%;
-        font-size: 1.5rem;
-        margin-left: 0;
-    }
-
-    .register-wrapper::before {
-
-        height: 40px;
-        width: 70%;
-        right: 35px;
-        bottom: -5px;
-        background-color: #0A322F;
-        border-radius: 3px;
-    }
-
-    .input-explanation {
-        font-size: 0.75rem;
-    }
-
-    label {
-        font-size: 1rem;
-    }
-
-    .registration-container {
-        width: 85vw;
-        padding-bottom: 8%;
-    }
-
-    .input-cell {
-        margin: 2.5% 0;
-    }
-}
+#registration-closed::backdrop { background: #18120d80; }
+#registration-title { margin: 0; font: 400 2.5rem/1.2 'BlackChancery', Georgia, serif; }
+#registration-message { margin: 12px 0 20px; }
+#registration-close { min-height: 44px; padding: 8px 20px; border: 1px solid #125953; border-radius: 3px; background: #0a322f; color: #f1ebde; font: inherit; cursor: pointer; }

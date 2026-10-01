@@ -14,7 +14,7 @@
     /* border: 5px solid #fff; */
     transition: all 0.5s ease-in-out;
   }
-  
+
   .menu-btn__burger,
   .menu-btn__burger::before,
   .menu-btn__burger::after {
@@ -24,7 +24,7 @@
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0 2px 5px var(--box-shadow-color);
-  
+
     transition: all 0.5s ease-in-out;
   }
   .menu-btn__burger::before,
@@ -38,7 +38,7 @@
   .menu-btn__burger::after {
     transform: translateY(16px);
   }
-  
+
   /* ANIMATION */
   .menu-btn.open .menu-btn__burger {
     transform: translateX(-50px);
@@ -77,11 +77,11 @@
     display: block;
     transition: 0.3s;
   }
-  
+
   .sidenav a:hover {
     color: #f1f1f1;
   }
-  
+
   .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -89,11 +89,11 @@
     font-size: 36px;
     margin-left: 50px;
   }
-  
-  
+
+
 
   @media (max-width:768px) {
-      
+
 
     .menu-btn{
         right: 20px;
