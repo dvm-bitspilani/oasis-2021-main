@@ -8,7 +8,7 @@ The original desktop and mobile museum walls, paintings, labels, star/shake anim
 
 ## Preservation and optimization evidence
 
-The first-pass build at `220d916` contained **150 files / 7,619,545 bytes**. The final build contains **124 files / 5,821,754 bytes**, a **23.59% reduction**. This measures deployable artifact bytes, not real-device load time or Core Web Vitals.
+The first-pass build at `220d916` contained **150 files / 7,619,545 bytes**. The final build contains **124 files / 5,821,772 bytes**, a **23.59% reduction**. This measures deployable artifact bytes, not real-device load time or Core Web Vitals.
 
 Eight SVG-embedded PNG payloads changed from **1,329,056 bytes** to **681,610 bytes** of lossless WebP. All decoded RGBA pixels, dimensions and surrounding SVG vector markup were compared to the first-pass artwork and are identical; see `docs/artwork-lossless-verification.json`. Existing standalone WebP images were retained without further lossy recompression.
 
@@ -26,3 +26,5 @@ The static build now follows referenced resources, rewrites all deployed asset U
 - Artwork pixels/vector markup, font outlines/metrics, content hashes and deployment cache rules passed independent verification.
 
 Parent performs desktop/mobile browser inspection, cold and warm navigation checks and remote publication. This pass does not claim browser-performance measurements, cross-browser results or a physical-device test. No push or deployment was performed by this refinement agent.
+
+Parent browser review found no broken images or runtime errors on desktop/mobile room routes. About/sponsor rooms now clip decorative overflow at the viewport while their content panels retain vertical scrolling. The desktop video gallery intentionally spans 4,500px and retains horizontal wheel navigation; mobile uses the original vertical gallery.
